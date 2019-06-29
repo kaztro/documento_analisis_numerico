@@ -1,51 +1,28 @@
-\documentclass[12pt]{article}
+\documentclass{article}
 
-\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
 \usepackage[T1]{fontenc}
-\usepackage[spanish]{babel}
-\renewcommand{\shorthandsspanish}{}
-\usepackage[pdftex]{graphicx}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{amsthm}
-\usepackage{framed}
+\usepackage[spanish,activeacute]{babel}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{geometry,pdfpages}
 \usepackage{wrapfig}
-\usepackage{multicol}
-\setcounter{MaxMatrixCols}{11}
-\usepackage{geometry,mathtools}
 
-\usepackage[table]{xcolor}
-\usepackage{tikz}
-%\newcommand*\circled[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
-\usepackage{tabularx}
-\usepackage{tcolorbox}
-\usepackage{multirow}
-%\newcommand{\minus}{\scalebox{0.75}[1.0]{$-$}}
-
-%\newtcolorbox{mybox}[1]{colback=green!5,colframe=green!35!black,fonttitle=\bfseries}
-
-\addtolength{\textwidth}{4cm}
-\addtolength{\hoffset}{-2cm}
-\addtolength{\textheight}{4cm}
-\addtolength{\voffset}{-2cm}
-
-\pagestyle{empty}
-
-\newtheorem{theorem}{Teorema}
-
-\setlength\parindent{0pt}
-
-
-%\geometry{
-%	letterpaper,%showframe,
-%	left=30mm,top=10mm,right=30mm,bottom=10mm,
-%	headheight=6mm,headsep=7mm,foot=5mm,footskip=15mm,
-%	includeheadfoot
-%}
+\geometry{
+	letterpaper,%showframe,
+	left=30mm,top=10mm,right=30mm,bottom=10mm,
+	headheight=6mm,headsep=7mm,foot=5mm,footskip=15mm,
+	includeheadfoot
+}
 
 \begin{document}
 
+		
+	\begin{wrapfigure}[0]{r}{0.15\textwidth}
+		\vspace{-142pt}
+		\includegraphics[width=2cm]{loguito}
+	\end{wrapfigure}
+	
 	\begin{center}
 		\fbox{\parbox[t]{\linewidth}{
 				\begin{flushleft}
@@ -63,10 +40,15 @@
 				\end{flushleft}
 		}}
 	\end{center}
-
-	\begin{wrapfigure}[0]{R}{0.15\textwidth}
-		\vspace{-130pt}
-		\includegraphics[width=3cm]{loguito.png}
-	\end{wrapfigure}
+	
+	\textbf{Resumen. } \emph{Aqu'i ir'a el resumen}
+	
+		\section*{Definici'on del problema}
+		\section*{Resultados te'oricos}
+		\section*{Resultados pr'acticos}
+		
+		\begin{thebibliography}{00}
+			\bibitem{1} tengo sue'no xd
+		\end{thebibliography}
 	
 \end{document}
