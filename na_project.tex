@@ -47,8 +47,6 @@
 		}}
 	\end{center}
 	
-	\textbf{Resumen. } \emph{Aqu'i ir'a el resumen}
-	
 		\section*{Definiciones}
 			El m'etodo de cuadratura de Gauss es un m'etodo num'erico para evaluar integrales definidas de funciones, por medio de sumatorias f'aciles de implementar, de la siguiente forma:
 			
@@ -56,13 +54,13 @@
 			\int_{a}^{b} f(x) \cdot dx \approx \sum_{i=1}^{n} c_{i} f(x_{i}) \approx w_{1}f(x_{1})+w_{2}f(x_{2})+w_{3}f(x_{3})+...+w_{n}f(x_{n})
 			\end{equation}
 			
-			Donde $\mathrm{w_{i}}$ se refiere a los pesos o coeficientes que en el caso de cuadratura de Gauss se explicar'a cómo calcularse m'as adelante.
+			Donde $\mathrm{w_{i}}$ se refiere a los pesos o coeficientes que en el caso de cuadratura de Gauss se explicar'a c'omo calcularse m'as adelante.
 			Y donde $\mathrm{x_{i}}$ se refiere a las ra'ices de la funci'on como polinomio lo cual recordando se obtienen igualando la funci'on a cero, es decir:
 			\begin{equation}\label{eq:eq2}
 				f(x)=0
 			\end{equation}
 			
-			Y los resultados obtenidos siguientes $\mathrm{x_{1}, x_{2},..., x_{n}}$ son las raices de la funci'on.
+			Y los resultados obtenidos siguientes $\mathrm{x_{1}, x_{2},..., x_{n}}$ son las ra'ices de la funci'on.
 			
 			Para este m'etodo tambi'en debemos recordar la f'ormula del polinomio interpolante de Legendre el cual es:
 			\begin{equation}\label{eq:eq3}
@@ -100,7 +98,7 @@
 						\item 
 						Para cada $\mathrm{n}$, $\mathrm{P_{n}(x)}$ es un polinomio m'onico (polinomio de una variable cuyo coeficiente principal es 1) con grado $n$.
 						\item
-						$\mathrm{\int_{-1}^{1}P(x)P_{n}(x)\cdot dx = 0}$ cuando $\mathrm{P(x)}$ sea un polinomio de grado menor a $\mathrm{n}$
+						$\mathrm{\int_{-1}^{1}P(x)P_{n}(x)\cdot dx = 0}$ cuando $\mathrm{P(x)}$ sea un polinomio de grado menor a $\mathrm{n}$.
 					\end{enumerate}
 					
 					Los primeros polinomios de Legendre son:\\
@@ -118,7 +116,7 @@
 					
 					Veamos el siguiente ejemplo:\\
 					Polinomio:  $\mathrm{P_{2}(x)=x^{2}-\frac{1}{3}}$\\
-					Se obtienen las raices:
+					Se obtienen las ra'ices:
 					\begin{equation}
 						\begin{array}{lcc}
 							x^{2}-\frac{1}{3}=0\\
@@ -146,7 +144,7 @@
 					ra'ices $\mathrm{x_{i}}$ de los n-'esimos polinomios de Legendre y coeficientes $\mathrm{c_{i}}$
 				\end{center}
 				
-				Para aproximar las integrales en un intervalo general $[a, b]$, el problema debe trasladarse de nuevo a $[-1, 1]$ . Si se usa la sustituci'on $\mathrm{t= \frac{(2x-a-b)}{(b-a)}}$ la nueva f'ormula queda de la siguiente manera:
+				Fig 1. Para aproximar las integrales en un intervalo general $[a, b]$, el problema debe trasladarse de nuevo a $[-1, 1]$ . Si se usa la sustituci'on $\mathrm{t= \frac{(2x-a-b)}{(b-a)}}$ la nueva f'ormula queda de la siguiente manera:
 				\begin{equation}
 					\int_{a}^{b}f(x)=\int_{-1}^{1}f(\frac{(b-a)t+b+a}{2})\frac{b-a}{2}\cdot dt
 				\end{equation}
